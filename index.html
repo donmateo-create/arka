@@ -5,29 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello PWA</title>
 
-  <!-- App icon -->
-  <link rel="icon" href="ikonka.png" />
-
-  <!-- Manifest -->
   <link rel="manifest" href="manifest.json" />
-
-  <!-- PWA colors -->
+  <link rel="icon" href="ikonka.png" type="image/png" />
   <meta name="theme-color" content="#317EFB"/>
 
-  <!-- Styles -->
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 60px;
-    }
-    img {
-      width: 128px;
-      height: 128px;
-    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 60px; }
+    img { width: 128px; height: 128px; }
     button {
       margin-top: 20px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 18px;
       background-color: #317EFB;
       color: white;
@@ -35,16 +22,13 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    button:hover {
-      background-color: #225EC8;
-    }
   </style>
 </head>
 <body>
   <h1>Hello PWA</h1>
   <img src="ikonka.png" alt="App Icon" />
   <div>
-    <button id="helloButton">Say Hello</button>
+    <button id="installButton" disabled>Install App</button>
   </div>
 
   <script src="app.js"></script>
